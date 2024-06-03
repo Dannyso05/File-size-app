@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compression App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Compression App</h1>
+        <input type="file" id="inputImage" accept="image/*">
+        <button onclick="compressImage()">Compress Image</button>
+        <button onclick="decompressImage()">Decompress Image</button>
+        <div class="images">
+            <div>
+                <h3>Original Image</h3>
+                <img id="originalImage" src="">
+                <p id="originalSize"></p>
+            </div>
+            <div>
+                <h3>Compressed Image</h3>
+                <img id="compressedImage" src="">
+                <p id="compressedSize"></p>
+            </div>
+            <div>
+                <h3>Decompressed Image</h3>
+                <img id="decompressedImage" src="">
+                <p id="decompressedSize"></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
